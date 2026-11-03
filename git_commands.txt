@@ -8,7 +8,7 @@ Command:
 ```bash
 git --version
 ```
-**Explanation:** Checks the installed Git version and confirms that Git is available on the system.
+Explanation: Checks the installed Git version and confirms that Git is available on the system.
 
 Command:
 ```bash
