@@ -1,0 +1,219 @@
+# Step 6: Command Documentation File 
+
+I created a text file named `git_commands.txt` in the main GameVault project folder. It contains the Git commands used during the assignment and a short explanation of each command.
+
+## 1. Git Installation and Repository Setup
+
+Command:
+```bash
+git --version
+```
+**Explanation:** Checks the installed Git version and confirms that Git is available on the system.
+
+Command:
+```bash
+git init
+```
+Explanation: Creates a new Git repository in the GameVault project folder.
+
+Command:
+```bash
+git branch -M main
+```
+Explanation: Renames the current branch to `main`, which is used as the primary branch of the project.
+
+Command:
+```bash
+git status
+```
+Explanation: Shows the current status of the repository, including modified, staged, and untracked files.
+
+## 2. Initial Commit and HTML Modification
+
+Command:
+```bash
+git add .
+```
+Explanation: Adds all eligible project files to the staging area before committing.
+
+Command:
+```bash
+git commit -m "Initial GameVault website setup"
+```
+Explanation: Saves the initial version of the GameVault project in Git history.
+
+Command:
+```bash
+git add index.html
+```
+Explanation: Adds the modified homepage file to the staging area.
+
+Command:
+```bash
+git commit -m "Improve GameVault homepage introduction"
+```
+Explanation: Saves the homepage modification as a second commit.
+
+## 3. Branch Creation and Feature Development
+
+Command:
+```bash
+git branch feature
+```
+Explanation: Creates a new branch named `feature` for working on additional changes.
+
+Command:
+```bash
+git branch
+```
+Explanation: Displays all local branches and shows the currently active branch.
+
+Command:
+```bash
+git switch feature
+```
+Explanation: Switches from the main branch to the feature branch.
+
+Command:
+```bash
+git add about.html
+```
+Explanation: Adds the modified About page to the staging area.
+
+Command:
+```bash
+git commit -m "Add gaming platform information"
+```
+Explanation: Saves the new gaming platform information as a commit on the feature branch.
+
+Command:
+```bash
+git switch main
+```
+Explanation: Switches back to the main branch after completing the feature.
+
+Command:
+```bash
+git merge --no-ff feature -m "Merge feature branch into main"
+```
+**Explanation:** Merges the feature branch into the main branch and creates a separate merge commit.
+
+Command:
+```bash
+git log --oneline --graph --all
+```
+Explanation: Displays the commit history of all branches in a simple graphical format.
+
+## 4. .gitignore Configuration
+
+Command:
+```bash
+git check-ignore -v test.log temp/sample.txt
+```
+Explanation: Checks whether the specified log file and temporary-folder file are ignored by Git.
+
+Command:
+```bash
+git add .gitignore
+```
+Explanation: Adds the `.gitignore` file to the staging area.
+
+Command:
+```bash
+git commit -m "Add gitignore configuration"
+```
+Explanation: Saves the ignore rules in the Git repository.
+
+## 5. Undo Operation
+
+Command:
+```bash
+git add undo-demo.txt
+```
+Explanation: Adds the temporary file to the staging area before creating the demonstration commit.
+
+Command:
+```bash
+git commit -m "Add temporary file for undo demonstration"
+```
+Explanation: Creates an additional commit to demonstrate the undo operation.
+
+Command:
+```bash
+git log --oneline -3
+```
+Explanation: Displays the three most recent commits to check the repository history.
+
+Command:
+```bash
+git reset --soft HEAD~1
+```
+Explanation: Removes the latest commit from the history while keeping its changes staged.
+
+Command:
+```bash
+git restore --staged undo-demo.txt
+```
+Explanation: Removes the temporary file from the staging area without deleting its contents.
+
+## 6. GitHub Integration
+
+Command:
+```bash
+git remote add origin https://github.com/varad03-ui/GameVault.git
+```
+Explanation: Connects the local GameVault repository to the GitHub repository using the remote name `origin`.
+
+Command:
+```bash
+git remote -v
+```
+**Explanation:** Displays the remote repository URLs used for fetching and pushing.
+
+Command:
+```bash
+git push -u origin main
+```
+Explanation: Uploads the main branch to GitHub and sets its upstream tracking branch.
+
+Command:
+```bash
+git push -u origin feature
+```
+Explanation: Uploads the feature branch to GitHub and sets its upstream tracking branch.
+
+## 7. Documentation and Final Verification
+
+Command:
+```bash
+git add git_commands.txt
+```
+Explanation: Adds the Git command documentation file to the staging area.
+
+Command:
+```bash
+git commit -m "Add Git command documentation"
+```
+Explanation: Saves the command documentation file as a new commit.
+
+Command:
+```bash
+git push origin main
+```
+Explanation: Uploads the latest changes from the main branch to GitHub.
+
+Command:
+```bash
+git branch -a
+```
+Explanation: Displays all local and remote branches.
+
+Command:
+```bash
+git status
+```
+Explanation: Checks the current repository status and shows whether any changes are still uncommitted.
+
+---
+
+Result: The `git_commands.txt` file documents the Git commands used throughout the assignment, along with brief explanations of their purpose.
